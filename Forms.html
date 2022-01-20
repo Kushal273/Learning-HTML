@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+
+    <form action="/Chickens">
+        <p><label for="username">Enter an username:</label>
+            <input id="username" type="text" placeholder="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input id="password" type="password">
+
+        </p>
+        <p>
+            <label for="number">Enter a number:</label>
+            <input id="number" type=" number">
+        </p>
+        <p>
+            <label for="color">Choose a color:</label>
+            <input id="color" type="color">
+        </p>
+
+        <button> Submit</button>
+    </form>
+    <button> send</button>
+
+    <h1>hijacking searches</h1>
+
+    <h2>Youtube</h2>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+    <h2>Google</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search google</button>
+    </form>
+    <h3>More inputs</h3>
+    <form action="/dogs">
+        <input type="checkbox" name="agree to all" id="agree" checked>
+        <label for="agree">I agreed</label>
+
+        <P>
+            <label for="red">Red</label>
+            <input type="radio" name="color" id="red" value="red">
+            <label for="white">White</label>
+            <input type="radio" name="color" id="white" value="white">
+            <label for="blue">Blue</label>
+            <input type="radio" name="color" id="Blue" value="blue">
+        </P>
+
+        <p>
+            <label for="color">Choose a color</label>
+            <select name="color" id="color">
+
+                <option value="blue">Blue</option>
+                <option value="green">green</option>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="height">Choose a Height</label>
+            <input type="range" name=height min="5" max="10">
+        </p>
+        <p>
+            <label for="Questions">Any Questions?</label>
+            <br>
+            <textarea name="Questions" id="Questions" cols="30" rows="10"></textarea>
+        </p>
+        <button>Submit</button>
+
+    </form>
+
+    <form action="/rey">
+        <h2>Validation Demo</h2>
+        <label for="Given"> Given Name</label>
+        <input type="text" id="Given" name="Givenname" required>
+
+        <button>GO</button>
+    </form>
+</body>
+
+</html>
